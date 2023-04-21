@@ -23,7 +23,6 @@ class MainController extends Controller
     function editPostView($id)
     {
         $post = Post::find($id);
-        // dd($post);
 
         return view('editPost', ['post' => $post]);
     }
